@@ -13,14 +13,14 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(231, 56, 56);
   padding: 10px 15px;
 }
 
 /* Style the header links */
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -31,20 +31,19 @@
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
-  text-decoration: underline;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: dodgerblue;
+
   color: white;
 }
 
@@ -53,9 +52,6 @@
   float: right;
 }
 
-.upcoming {
-  margin-right: 400px;
-}
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
