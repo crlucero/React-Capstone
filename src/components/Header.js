@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-
+// TODO: Fix header to be compatible with bootstrap. Styling is currently messed up
 export class Header extends Component {
   render() {
     return (
