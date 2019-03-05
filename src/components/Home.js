@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./Home.css";
 import ShoeList from "./ShoeList";
+import Carousel from './Carousel'
 
 export default class Home extends Component {
   constructor() {
@@ -96,6 +97,8 @@ export default class Home extends Component {
     });
     return (
       <Container fluid>
+      <Carousel />
+
         <Row>{shoeList}</Row>
       </Container>
     );

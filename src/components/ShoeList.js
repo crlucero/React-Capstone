@@ -17,7 +17,10 @@ export default class ShoeList extends Component {
           <CardBody>
             <CardTitle>{this.props.shoe.name}</CardTitle>
             <CardSubtitle>{this.props.shoe.price}</CardSubtitle>
+            <hr />
             <Button color="danger">WANT</Button>
+              <br />
+              <br />
             <Button color="danger">ADD TO CART</Button>
           </CardBody>
         </Card>
