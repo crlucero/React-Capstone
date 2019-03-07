@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Nav.css';
 import {
   Collapse,
@@ -11,7 +11,8 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem
+} from 'reactstrap';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -31,12 +32,14 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="danger" dark expand="sm">
-          <NavbarBrand className="mr-auto" href="/">SNKRS.</NavbarBrand>
+          <NavbarBrand className="mr-auto" href="/">
+            SNKRS.
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">In Stock</NavLink>
+                <NavLink href="/stock">In Stock</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/upcoming">Upcoming</NavLink>
@@ -46,16 +49,10 @@ export default class Example extends React.Component {
                   Options
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
-                    Wanted
-                  </DropdownItem>
-                  <DropdownItem>
-                    Cart
-                  </DropdownItem>
+                  <DropdownItem href="/wanted">Wanted</DropdownItem>
+                  <DropdownItem href="/cart">Cart</DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
-                    Login
-                  </DropdownItem>
+                  <DropdownItem>Login</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

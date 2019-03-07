@@ -1,3 +1,14 @@
 .container {
-    padding-top: 15%;
+  padding-top: -15%;
+}
+
+.trending {
+  padding: 5%;
+}
+
+.trending h1 {
+  width: auto;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
 }

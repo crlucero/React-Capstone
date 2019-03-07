@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import './Home.css';
 import ShoeList from './ShoeList';
-import Carousel from './Carousel';
+import './Stock.css';
 
-export default class Home extends Component {
+export default class Stock extends Component {
   constructor() {
     super();
     this.state = {
@@ -87,6 +86,7 @@ export default class Home extends Component {
       ]
     };
   }
+
   render() {
     let shoeList = this.state.shoe.map(shoe => {
       return (
@@ -97,10 +97,7 @@ export default class Home extends Component {
     });
     return (
       <Container fluid>
-        <Carousel />
-        <div className="trending">
-          <h1>TRENDING</h1>
-        </div>
+        <h1 className="title">In Stock</h1>
         <Row>{shoeList}</Row>
       </Container>
     );
